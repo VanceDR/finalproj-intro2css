@@ -10,15 +10,13 @@ REQUIREMENTS
 */
 
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:ghostwhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: ghostwhite;
 }
 
-
-
 header {
-    display: flex;
-    background: lightblue;
+  display: flex;
+  background: lightblue;
 }
 
 /* 
@@ -29,38 +27,38 @@ Style your navigation in an attractive fashion – use at least three CSS proper
 Apply the flex property to at least one parent element. The navigation bar is one place to use flex. You can also use it on images if you would like.
 */
 nav ul {
-    padding-left: 1em;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    font-variant: small-caps;
+  padding-left: 1em;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  font-variant: small-caps;
 }
 
-nav a{
-    border-radius: 0.2em;
-    padding: 0.25em 0.5em;
-    transition: background 0.1s ease-in;
+nav a {
+  border-radius: 0.2em;
+  padding: 0.25em 0.5em;
+  transition: background 0.1s ease-in;
 }
-
 
 /* 
 Update at least one element using the hover pseudo-class. Make sure that the hover property does something interesting. I encourage you to do an internet search on some common transitions and try those.
 */
-nav a:hover, nav a:focus {
-    background: rgb(220, 255, 255);
+nav a:hover,
+nav a:focus {
+  background: rgb(220, 255, 255);
 }
 
 li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .current a {
-    background: rgb(220, 255, 255);
+  background: rgb(220, 255, 255);
 }
 
 /* 
@@ -68,94 +66,93 @@ Style all images using the box model. At a minimum use border, padding, and bord
 */
 
 img {
-    border: 5px outset darkslategray;
-    border-radius: 1em;
-    padding: 0.5em;
+  border: 5px outset darkslategray;
+  border-radius: 1em;
+  padding: 0.5em;
 
-    width: calc(100% - 2em);
-    display: block;
-    max-width: 300px;
-    background: darkcyan;
-    margin: 0 auto;
+  width: calc(100% - 2em);
+  display: block;
+  max-width: 300px;
+  background: darkcyan;
+  margin: 0 auto;
 }
 
 /* 
 Use the position property and the focus pseudo-class to style your "Skip to Main Content" link.  It should only be visible when the link is in focus.
 */
 .skip {
-    position: absolute;
-    top: -40px;
+  position: absolute;
+  top: -40px;
 }
 
 .skip:focus {
-    position: absolute;
-    background-color: white;
-    top: 0;
-    margin: 0.5em;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  margin: 0.5em;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
 }
 
 /* 
 Apply the grid property to at least one parent element. Use at least two columns, but feel free to use more!
 */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    justify-content: space-around;
-    row-gap: 1em;
-    align-items: start;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: space-around;
+  row-gap: 1em;
+  align-items: start;
+  justify-items: center;
 }
 
 blockquote {
-    background: rgb(255, 255, 255, 0.8);
-    padding: 0.2em;
-    margin: 1em;
+  background: rgb(255, 255, 255, 0.8);
+  padding: 0.2em;
+  margin: 1em;
 }
 
 .profile {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
 }
 .centered {
-    text-align:center;
+  text-align: center;
 }
 
 /* 
 Implement the nth-child selector. In my example I used this on the flex page where I gave every other image a different border-radius. Don't forget, if you are styling an advanced selector it can be a little trickier to use the pseudo-classes. Work slowly and carefully.
 */
-.grid section{
-    border-radius: 1em;
-    padding: 0 1em 1em;
+.grid section {
+  border-radius: 1em;
+  padding: 0 1em 1em;
 }
 
 section:nth-child(1) {
-    background: #ffe;
+  background: #ffe;
 }
 section:nth-child(2) {
-    background: #fef;
+  background: #fef;
 }
 section:nth-child(3) {
-    background: #eff;
+  background: #eff;
 }
 section:nth-child(4) {
-    background: #fee;
+  background: #fee;
 }
 section:nth-child(5) {
-    background: #ffe;
-    grid-column-start: span 2;
-    
+  background: #ffe;
+  grid-column-start: span 2;
 }
