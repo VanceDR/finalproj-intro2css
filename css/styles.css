@@ -84,7 +84,7 @@ Use the position property and the focus pseudo-class to style your "Skip to Main
 */
 a[href="#content"] {
     position: absolute;
-    left: -1000px;
+    left: -300px;
 }
 
 a[href="#content"]:focus {
