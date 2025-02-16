@@ -82,15 +82,15 @@ img {
 /* 
 Use the position property and the focus pseudo-class to style your "Skip to Main Content" link.  It should only be visible when the link is in focus.
 */
-a[href="#content"] {
+.skip {
     position: absolute;
-    left: -300px;
+    top: -40px;
 }
 
-a[href="#content"]:focus {
+.skip:focus {
     position: absolute;
     background-color: white;
-    left: 0;
+    top: 0;
     margin: 0.5em;
 }
 
