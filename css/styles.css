@@ -88,8 +88,10 @@ a[href="#content"] {
 }
 
 a[href="#content"]:focus {
-    position: static;
+    position: absolute;
+    background-color: white;
     left: 0;
+    margin: 0.5em;
 }
 
 ul {
@@ -135,7 +137,7 @@ blockquote {
 /* 
 Implement the nth-child selector. In my example I used this on the flex page where I gave every other image a different border-radius. Don't forget, if you are styling an advanced selector it can be a little trickier to use the pseudo-classes. Work slowly and carefully.
 */
-article section{
+.grid section{
     border-radius: 1em;
     padding: 0 1em 1em;
 }
